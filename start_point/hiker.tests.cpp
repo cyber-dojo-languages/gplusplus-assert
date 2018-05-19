@@ -11,7 +11,7 @@ namespace {
 
     const char * green_traffic_light_pattern()
     {
-        return "All tests passed";
+        return "All tests passed\n";
     }
 } // namespace
 

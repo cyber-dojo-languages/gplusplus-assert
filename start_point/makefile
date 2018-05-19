@@ -1,4 +1,7 @@
-CXXFLAGS += -I. -std=c++17 -Wall -Wextra -Werror
+CXXFLAGS += -I.
+CXXFLAGS += -std=c++17
+CXXFLAGS += -Wall -Wextra -Werror
+CXXFLAGS += -fprofile-arcs -ftest-coverage
 
 HPP_FILES = $(wildcard *.hpp)
 COMPILED_HPP_FILES = $(patsubst %.hpp,%.compiled_hpp,$(HPP_FILES))
