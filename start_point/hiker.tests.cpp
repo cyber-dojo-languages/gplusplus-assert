@@ -1,6 +1,7 @@
 #include "hiker.hpp"
 #include <cassert>
 #include <iostream>
+#include <string>
 
 namespace {
 
@@ -9,7 +10,7 @@ namespace {
         assert(answer() == 42);
     }
 
-    const char * green_traffic_light_pattern()
+    std::string green_traffic_light_pattern()
     {
         return "All tests passed\n";
     }
