@@ -7,7 +7,7 @@ namespace
     {
         assert(answer() == 42);
     }
-} // namespace
+}
 
 int main()
 {
