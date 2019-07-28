@@ -30,12 +30,11 @@ workflows:
               only:
               - master
     jobs:
-      - build-publish-trigger:
-      
+      - build-publish-trigger
   commit:
     jobs:
       - build-publish-trigger:
           filters:
             branches:
               only:
-                  - master
+                - master
