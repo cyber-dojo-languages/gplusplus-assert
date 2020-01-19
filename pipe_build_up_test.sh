@@ -12,7 +12,11 @@ process_cdl_image_src_dir()
     >&2 echo "Found executable ${name} on the PATH"
     echo "${name}"
   else
-    local -r url="https://raw.githubusercontent.com/cyber-dojo-tools/image_builder/master/${name}"
+    local -r github=raw.githubusercontent.com
+    local -r org=cyber-dojo-tools
+    local -r repo=image_builder
+    local -r branch=master
+    local -r url="https://${github}/${org}/${repo}/${branch}/${name}"
     >&2 echo "Did not find executable ${name} on the PATH"
     >&2 echo "Attempting to curl it from ${url}"
     curl --fail --output "${TMP_DIR}/${name}" --silent "${url}"
