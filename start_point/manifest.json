@@ -6,8 +6,7 @@
     "hiker.cpp",
     "hiker.hpp",
     "makefile",
-    "cyber-dojo.sh",
-    "inc/wibble.txt"
+    "cyber-dojo.sh"
   ],
 
   "hidden_filenames": [ ".*\\.gcov" ],
