@@ -1,5 +1,6 @@
 #include "hiker.hpp"
 #include <cassert>
+#include <iostream>
 
 namespace
 {
@@ -12,4 +13,5 @@ namespace
 int main()
 {
     life_the_universe_and_everthing();
+    std::cout << "All tests passed\n";
 }
